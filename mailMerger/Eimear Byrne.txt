@@ -1,0 +1,10 @@
+Dear Eimear Byrne,
+
+You didn't last too long at the lecture today! (89 mins.) You need to stay for the full duration.
+
+Name                 : Eimear Byrne 
+Student Number       : 7890123
+Email Address        : eimear.byrne@example.com 
+Log On Time          : 09:01 
+Log Off Time         : 10:30 
+Time logged          : 89

@@ -1,0 +1,10 @@
+Dear William Murphy,
+
+You didn't last too long at the lecture today! (84 mins.) You need to stay for the full duration.
+
+Name                 : William Murphy 
+Student Number       : 8901234
+Email Address        : william.murphy@example.com 
+Log On Time          : 09:29 
+Log Off Time         : 10:53 
+Time logged          : 84

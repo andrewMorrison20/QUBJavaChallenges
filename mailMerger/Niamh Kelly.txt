@@ -1,0 +1,10 @@
+Dear Niamh Kelly,
+
+You didn't last too long at the lecture today! (60 mins.) You need to stay for the full duration.
+
+Name                 : Niamh Kelly 
+Student Number       : 9012345
+Email Address        : niamh.kelly@example.com 
+Log On Time          : 09:00 
+Log Off Time         : 10:00 
+Time logged          : 60
