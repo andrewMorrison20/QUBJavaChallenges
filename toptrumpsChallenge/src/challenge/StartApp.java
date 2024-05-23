@@ -14,29 +14,19 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
-/**
- * PUT YOUR NAME HERE AND YOUR STUDENT NUMBER
- * 
- *
- */
+
 public class StartApp {
 	
 	/**
-	 * Entry point of program - no need to modify this method
+	 * Entry point of program 
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		showMenu();	
 	}
 	
-	//TODO modify readData method to populate List appropriately - method partially completed already
-	//TODO add static methods to this class as required to achieve tasks outlined in menu
-	//TODO modify showMenu method to add calls to new methods you write to accomplish the tasks outlined in the menu
-
 	/**
 	 * Launches menu system which in turn calls appropriate methods based on user choices
-	 * Partially implemented already
-	 * requires updating to add calls to other methods written to achieve the tasks described in tasks 3-10
 	 */
 	public static void showMenu() {
 		List<TopTrumpCard> mainDeck = readData();
@@ -71,32 +61,19 @@ public class StartApp {
 				System.out.println(mainDeck.size());
 				break;
 			case 2:
-				System.out.println("Option currently disabled...");
-				/* TODO Uncomment method call to enable this option 
-				 * (requires TopTrumpCard class to match expectations of Game Method to compile successfully)
-				 * deliberately commented out initially to allow attempting other tasks
-				 */
 				CardGame.playDemo(mainDeck);
 				break;
 			case 3:
-				
 				displayDeckSize(mainDeck);
 				break;
 			case 4:
-			
-				
 				System.out.println("Displaying all cards in the current deck");
 				displayAll(mainDeck);
 				break;
 			case 5:
-				
 				showSummary(orderedSublistByAttribute(searchByCategory(mainDeck,Category.HERO),5,"strength"));
-				
-				// TODO add required method call(s)
 				break;
 			case 6:
-			
-				// TODO add required method call(s)
 				//get all villains
 				List<TopTrumpCard> allVillains = searchByCategory(mainDeck, Category.VILLAIN);
 				//order deck of all villains by name (alphabeticaly)
@@ -105,38 +82,24 @@ public class StartApp {
 				showSummary(findCardsInRange(	orderedSublistByAttribute(allVillains, allVillains.size(), "name"),75,100));
 				break;
 			case 7:
-				
-				
 				//get card and therefore length of longest bio
-				
 				displayAll(getLongestBioList(mainDeck));
-				
-				// TODO add required method call(s)
 				break;
 			case 8:
 				//spec unclear as to wether list of duplicates should include orginal or just dup i.e n-1 count of each card - provided both
-				
 				System.out.println("Displaying list of duplicate cards including all instances of card");
 				showSummary(DuplicateList(mainDeck));
-				
 				System.out.println("Displaying list of duplicate cards including only additional instances of card");
-				
 				List<TopTrumpCard> onlyExtras = new ArrayList<TopTrumpCard>();
 				onlyExtras= DuplicateList(mainDeck);
 				removeDuplicates(onlyExtras);
 				showSummary(onlyExtras);
-				
-				// TODO add required method call(s)
 				break;
 			case 9:
 				removeDuplicates(mainDeck);
-				// TODO add required method call(s)
 				break;
 			case 10:
-			
-				// TODO add required method call(s)
 				List<TopTrumpCard> printList = (orderedSublistByAttribute(mainDeck, mainDeck.size(), "average"));
-				
 				Collections.reverse(printList);
 				showSummary(printList);
 				break;
@@ -170,7 +133,6 @@ public class StartApp {
 
 	private static List<TopTrumpCard> getLongestBioList(List<TopTrumpCard> searchList ) {
 		// TODO Auto-generated method stub
-		
 		List<TopTrumpCard>results= new ArrayList<TopTrumpCard>();
 		//get card and therefore length of longest bio
 		TopTrumpCard card = orderedSublistByAttribute(searchList, 1, "bio").get(0);
